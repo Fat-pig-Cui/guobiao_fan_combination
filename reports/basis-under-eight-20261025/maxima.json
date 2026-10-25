@@ -1,0 +1,242 @@
+[
+  {
+    "closed": true,
+    "method": "ron",
+    "total": 7,
+    "key": [
+      [
+        8057,
+        1
+      ],
+      [
+        8063,
+        1
+      ],
+      [
+        8070,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "normal",
+        "opening": "none",
+        "visible_before_win": [
+          19,
+          19,
+          19
+        ],
+        "wall_empty": false
+      },
+      "hand": "112233m222p34s11z",
+      "melds": [],
+      "method": "ron",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "2s"
+    },
+    "notation": "112233m222p34s11z2s",
+    "fans": [
+      {
+        "id": 8057,
+        "name": "和绝张",
+        "count": 1,
+        "value": 4,
+        "subtotal": 4
+      },
+      {
+        "id": 8063,
+        "name": "门前清",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      },
+      {
+        "id": 8070,
+        "name": "一般高",
+        "count": 1,
+        "value": 1,
+        "subtotal": 1
+      }
+    ],
+    "independently_rescored": true
+  },
+  {
+    "closed": true,
+    "method": "tsumo",
+    "total": 7,
+    "key": [
+      [
+        8055,
+        1
+      ],
+      [
+        8058,
+        1
+      ],
+      [
+        8070,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "normal",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": false
+      },
+      "hand": "12233m234p11s555z",
+      "melds": [],
+      "method": "tsumo",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "1m"
+    },
+    "notation": "12233m234p11s555z1m",
+    "fans": [
+      {
+        "id": 8055,
+        "name": "不求人",
+        "count": 1,
+        "value": 4,
+        "subtotal": 4
+      },
+      {
+        "id": 8058,
+        "name": "箭刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      },
+      {
+        "id": 8070,
+        "name": "一般高",
+        "count": 1,
+        "value": 1,
+        "subtotal": 1
+      }
+    ],
+    "independently_rescored": true
+  },
+  {
+    "closed": false,
+    "method": "ron",
+    "total": 7,
+    "key": [
+      [
+        8047,
+        1
+      ],
+      [
+        8074,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "normal",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": false
+      },
+      "hand": "33p555s11z",
+      "melds": [
+        {
+          "kind": "pon",
+          "tiles": "111m"
+        },
+        {
+          "kind": "pon",
+          "tiles": "222m"
+        }
+      ],
+      "method": "ron",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "3p"
+    },
+    "notation": "33p555s11z3p 111m222m",
+    "fans": [
+      {
+        "id": 8047,
+        "name": "碰碰和",
+        "count": 1,
+        "value": 6,
+        "subtotal": 6
+      },
+      {
+        "id": 8074,
+        "name": "幺九刻",
+        "count": 1,
+        "value": 1,
+        "subtotal": 1
+      }
+    ],
+    "independently_rescored": true
+  },
+  {
+    "closed": false,
+    "method": "tsumo",
+    "total": 7,
+    "key": [
+      [
+        8047,
+        1
+      ],
+      [
+        8081,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "normal",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": false
+      },
+      "hand": "66s11z",
+      "melds": [
+        {
+          "kind": "pon",
+          "tiles": "222m"
+        },
+        {
+          "kind": "pon",
+          "tiles": "333m"
+        },
+        {
+          "kind": "pon",
+          "tiles": "444p"
+        }
+      ],
+      "method": "tsumo",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "6s"
+    },
+    "notation": "66s11z6s 222m333m444p",
+    "fans": [
+      {
+        "id": 8047,
+        "name": "碰碰和",
+        "count": 1,
+        "value": 6,
+        "subtotal": 6
+      },
+      {
+        "id": 8081,
+        "name": "自摸",
+        "count": 1,
+        "value": 1,
+        "subtotal": 1
+      }
+    ],
+    "independently_rescored": true
+  }
+]

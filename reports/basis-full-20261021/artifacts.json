@@ -1,0 +1,22 @@
+[
+  {
+    "file": "results/basis-full-local-20261021/merged-20261021-051116/census.sqlite3",
+    "bytes": 1143222272,
+    "sha256": "deb3cc906046aae8f446c86dc2613800c06754366843d3d3f320c377c9026fc8"
+  },
+  {
+    "file": "results/basis-full-local-20261021/merged-20261021-051116/combinations.jsonl",
+    "bytes": 1061198679,
+    "sha256": "7d3df1b2b6e59ec1780197e496257381a94def1fb2f9fc020bf998b0a1986bfe"
+  },
+  {
+    "file": "results/basis-full-local-20261021/merged-20261021-051116/summary.json",
+    "bytes": 1461,
+    "sha256": "63422226cc84cf0205fcb5d714378405eede30bdb36b2f82d1f56d673f3b672a"
+  },
+  {
+    "file": "results/basis-full-local-20261021/merged-20261021-051116/witness-audit.json",
+    "bytes": 173,
+    "sha256": "08ff0f4d690fc6b2427cdfc61ff75b5702f292e1e5bcd0d46c976098572e9000"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "99 task checkpoints and source fingerprints match",
+    "Full standard interval cover and all four special families complete",
+    "All classification counts and maxima match independent SQL aggregates",
+    "Every total-fan distribution matches SQL count(distinct key)",
+    "Canonical observations are a subset of all-optimal observations",
+    "Closed/opened and ron/tsumo set identities hold",
+    "5358-row difference file totals and fan sums match",
+    "Gold 26/26 and silver 711/699 match independent topic results",
+    "Four maximum-fan witnesses independently rescored",
+    "Eight Markdown files pass link, fence and character checks; new tables centered"
+  ],
+  "full_witness_audit": {
+    "passed": true,
+    "observations_checked": 2224497,
+    "source": "results/basis-full-local-20261021/merged-20261021-051116/witness-audit.json",
+    "rerun_during_reporting": false
+  },
+  "production_sources_modified": false,
+  "raw_checkpoints_retained": true,
+  "boundary": "Checks establish report consistency with the completed census and its saved audit; they do not independently prove rule correctness or exhaustive real-game reachability."
+}

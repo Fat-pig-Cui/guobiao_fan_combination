@@ -1,0 +1,504 @@
+[
+  {
+    "closed": true,
+    "method": "ron",
+    "total": 316,
+    "key": [
+      [
+        8001,
+        1
+      ],
+      [
+        8004,
+        1
+      ],
+      [
+        8010,
+        1
+      ],
+      [
+        8011,
+        1
+      ],
+      [
+        8044,
+        1
+      ],
+      [
+        8061,
+        1
+      ],
+      [
+        8062,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "normal",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": true
+      },
+      "hand": "2z",
+      "melds": [
+        {
+          "kind": "ankan",
+          "tiles": "1111z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "5555z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "6666z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "7777z"
+        }
+      ],
+      "method": "ron",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "2z"
+    },
+    "notation": "2z2z 11111z55555z66666z77777z",
+    "fans": [
+      {
+        "id": 8001,
+        "name": "大三元",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8004,
+        "name": "四杠",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8010,
+        "name": "字一色",
+        "count": 1,
+        "value": 64,
+        "subtotal": 64
+      },
+      {
+        "id": 8011,
+        "name": "四暗刻",
+        "count": 1,
+        "value": 64,
+        "subtotal": 64
+      },
+      {
+        "id": 8044,
+        "name": "海底捞月",
+        "count": 1,
+        "value": 8,
+        "subtotal": 8
+      },
+      {
+        "id": 8061,
+        "name": "圈风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      },
+      {
+        "id": 8062,
+        "name": "门风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      }
+    ],
+    "independently_rescored": true
+  },
+  {
+    "closed": true,
+    "method": "tsumo",
+    "total": 324,
+    "key": [
+      [
+        8001,
+        1
+      ],
+      [
+        8004,
+        1
+      ],
+      [
+        8010,
+        1
+      ],
+      [
+        8011,
+        1
+      ],
+      [
+        8043,
+        1
+      ],
+      [
+        8045,
+        1
+      ],
+      [
+        8061,
+        1
+      ],
+      [
+        8062,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "kan_replacement",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": true
+      },
+      "hand": "2z",
+      "melds": [
+        {
+          "kind": "ankan",
+          "tiles": "1111z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "5555z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "6666z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "7777z"
+        }
+      ],
+      "method": "tsumo",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "2z"
+    },
+    "notation": "2z2z 11111z55555z66666z77777z",
+    "fans": [
+      {
+        "id": 8001,
+        "name": "大三元",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8004,
+        "name": "四杠",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8010,
+        "name": "字一色",
+        "count": 1,
+        "value": 64,
+        "subtotal": 64
+      },
+      {
+        "id": 8011,
+        "name": "四暗刻",
+        "count": 1,
+        "value": 64,
+        "subtotal": 64
+      },
+      {
+        "id": 8043,
+        "name": "妙手回春",
+        "count": 1,
+        "value": 8,
+        "subtotal": 8
+      },
+      {
+        "id": 8045,
+        "name": "杠上开花",
+        "count": 1,
+        "value": 8,
+        "subtotal": 8
+      },
+      {
+        "id": 8061,
+        "name": "圈风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      },
+      {
+        "id": 8062,
+        "name": "门风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      }
+    ],
+    "independently_rescored": true
+  },
+  {
+    "closed": false,
+    "method": "ron",
+    "total": 268,
+    "key": [
+      [
+        8001,
+        1
+      ],
+      [
+        8004,
+        1
+      ],
+      [
+        8010,
+        1
+      ],
+      [
+        8032,
+        1
+      ],
+      [
+        8044,
+        1
+      ],
+      [
+        8061,
+        1
+      ],
+      [
+        8062,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "normal",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": true
+      },
+      "hand": "2z",
+      "melds": [
+        {
+          "kind": "minkan",
+          "tiles": "7777z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "1111z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "5555z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "6666z"
+        }
+      ],
+      "method": "ron",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "2z"
+    },
+    "notation": "2z2z 7777z11111z55555z66666z",
+    "fans": [
+      {
+        "id": 8001,
+        "name": "大三元",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8004,
+        "name": "四杠",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8010,
+        "name": "字一色",
+        "count": 1,
+        "value": 64,
+        "subtotal": 64
+      },
+      {
+        "id": 8032,
+        "name": "三暗刻",
+        "count": 1,
+        "value": 16,
+        "subtotal": 16
+      },
+      {
+        "id": 8044,
+        "name": "海底捞月",
+        "count": 1,
+        "value": 8,
+        "subtotal": 8
+      },
+      {
+        "id": 8061,
+        "name": "圈风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      },
+      {
+        "id": 8062,
+        "name": "门风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      }
+    ],
+    "independently_rescored": true
+  },
+  {
+    "closed": false,
+    "method": "tsumo",
+    "total": 276,
+    "key": [
+      [
+        8001,
+        1
+      ],
+      [
+        8004,
+        1
+      ],
+      [
+        8010,
+        1
+      ],
+      [
+        8032,
+        1
+      ],
+      [
+        8043,
+        1
+      ],
+      [
+        8045,
+        1
+      ],
+      [
+        8061,
+        1
+      ],
+      [
+        8062,
+        1
+      ]
+    ],
+    "input": {
+      "context": {
+        "draw_source": "kan_replacement",
+        "opening": "none",
+        "visible_before_win": [],
+        "wall_empty": true
+      },
+      "hand": "2z",
+      "melds": [
+        {
+          "kind": "minkan",
+          "tiles": "7777z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "1111z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "5555z"
+        },
+        {
+          "kind": "ankan",
+          "tiles": "6666z"
+        }
+      ],
+      "method": "tsumo",
+      "profile": "editor_no_flower_v1",
+      "round_wind": "1z",
+      "seat_wind": "1z",
+      "win": "2z"
+    },
+    "notation": "2z2z 7777z11111z55555z66666z",
+    "fans": [
+      {
+        "id": 8001,
+        "name": "大三元",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8004,
+        "name": "四杠",
+        "count": 1,
+        "value": 88,
+        "subtotal": 88
+      },
+      {
+        "id": 8010,
+        "name": "字一色",
+        "count": 1,
+        "value": 64,
+        "subtotal": 64
+      },
+      {
+        "id": 8032,
+        "name": "三暗刻",
+        "count": 1,
+        "value": 16,
+        "subtotal": 16
+      },
+      {
+        "id": 8043,
+        "name": "妙手回春",
+        "count": 1,
+        "value": 8,
+        "subtotal": 8
+      },
+      {
+        "id": 8045,
+        "name": "杠上开花",
+        "count": 1,
+        "value": 8,
+        "subtotal": 8
+      },
+      {
+        "id": 8061,
+        "name": "圈风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      },
+      {
+        "id": 8062,
+        "name": "门风刻",
+        "count": 1,
+        "value": 2,
+        "subtotal": 2
+      }
+    ],
+    "independently_rescored": true
+  }
+]

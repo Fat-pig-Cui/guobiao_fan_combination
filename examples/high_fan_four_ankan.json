@@ -1,0 +1,19 @@
+{
+  "profile": "editor_no_flower_v1",
+  "hand": "2z",
+  "win": "2z",
+  "melds": [
+    {"kind": "ankan", "tiles": "1111z"},
+    {"kind": "ankan", "tiles": "5555z"},
+    {"kind": "ankan", "tiles": "6666z"},
+    {"kind": "ankan", "tiles": "7777z"}
+  ],
+  "method": "tsumo",
+  "seat_wind": "1z",
+  "round_wind": "1z",
+  "context": {
+    "draw_source": "kan_replacement",
+    "wall_empty": true,
+    "opening": "none"
+  }
+}

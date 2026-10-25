@@ -1,0 +1,10 @@
+{
+  "profile": "editor_no_flower_v1",
+  "hand": "22p778899m89p",
+  "win": "7p",
+  "method": "tsumo",
+  "melds": [{"kind": "minkan", "tiles": "5555z"}],
+  "seat_wind": "2z",
+  "round_wind": "1z",
+  "context": {"draw_source": "normal", "wall_empty": false, "opening": "none", "visible_before_win": []}
+}

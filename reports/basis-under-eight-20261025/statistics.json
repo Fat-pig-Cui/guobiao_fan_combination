@@ -1,0 +1,433 @@
+{
+  "profile": "editor_no_flower_v1",
+  "complete": true,
+  "source_sha256": {
+    "native/basis_scorer.hpp": "1ab557940a6b1b3f5a52ab87a0257d307bed242e04333bd2247698dd0e9f8671",
+    "native/basis_census.cpp": "2bee2f3f111198f0201c135a1e3b0809c370e45940f5a4fe57ffe4580bf6a701",
+    "native/structure_enumerator.cpp": "e342ef632e76018ffb586c31d3ddc0c3d4e60f14268cd0b894c8aa4a8552f550",
+    "basis_backend.py": "6edf652a0ad1404dfff33ca0278eabc9920ae7fd0cd0b61936c5c70efec6a921",
+    "rules.py": "1c41e758f98d01a2e48815386c9d4fbafb24a3155e4f5dd4efa29288165d5651",
+    "calc_fan.py": "6fe5aea5bbbd407865eb2c54d16fde52f6f6e3ca759a05497e0526e4759f24d9",
+    "decompose.py": "b1ff67d88fa1d361e8f0080098d630ec80c1edc271f24d219e112f519ca996aa",
+    "reachability.py": "f8b475d9b87810b02c989adf18a8160383fd561d9aa611ea7c29d0d7860e8797",
+    "context_expansion.py": "924460f9b60ac5227dc5996b92485aa2f0c7960612a8005f34ad41edf79aee1e",
+    "tools/basis_census.py": "6687bcfb4dea78425edd0c25d2a1438df98538d1e8408c06f90df78daee4b630"
+  },
+  "run": "results/basis-under-eight-local-20261025",
+  "min_fan": 0,
+  "max_fan": 7,
+  "final_directory": "results/basis-under-eight-local-20261025/merged-20261025-150743",
+  "coverage": {
+    "orphans": 13,
+    "unconnected": 720,
+    "knitted": 11016,
+    "seven_pairs": 16417104,
+    "standard": 11580567
+  },
+  "processed": {
+    "bases": 28009420,
+    "physical": 3430903252,
+    "contexts": 53642070794,
+    "completed_tasks": 99,
+    "task_count": 99
+  },
+  "timing": {
+    "started_at": "2026-10-25T21:24:10+08:00",
+    "merged_stage_started_at": "2026-10-25T23:07:43+08:00",
+    "export_finished_at_approx": "2026-10-25T23:07:48.157419+08:00",
+    "finished_at": "2026-10-25T23:07:53+08:00",
+    "total_seconds": 6223.0,
+    "enumeration_seconds_approx": 6213.0,
+    "merge_export_seconds_approx": 5.157419,
+    "audit_seconds_approx": 4.842581,
+    "note": "launch.json timestamp is a few seconds after actual controller start; phase times use UTC merged directory timestamp and summary file mtime"
+  },
+  "policies": {
+    "all_optimal": {
+      "counts": {
+        "overall": 11099,
+        "opened": 9673,
+        "ron": 7188,
+        "opened_ron": 5973,
+        "tsumo": 3911,
+        "opened_tsumo": 3700,
+        "closed": 1426,
+        "closed_tsumo": 211,
+        "closed_ron": 1215
+      },
+      "observations": 11099,
+      "distribution": {
+        "overall": {
+          "7": 4723,
+          "6": 3240,
+          "5": 1893,
+          "4": 866,
+          "3": 293,
+          "2": 72,
+          "1": 12
+        },
+        "closed": {
+          "7": 761,
+          "6": 426,
+          "5": 177,
+          "4": 51,
+          "3": 10,
+          "2": 1
+        },
+        "opened": {
+          "7": 3962,
+          "6": 2814,
+          "5": 1716,
+          "4": 815,
+          "3": 283,
+          "2": 71,
+          "1": 12
+        },
+        "ron": {
+          "7": 2882,
+          "6": 2068,
+          "5": 1291,
+          "4": 642,
+          "3": 233,
+          "2": 61,
+          "1": 11
+        },
+        "tsumo": {
+          "7": 1841,
+          "6": 1172,
+          "5": 602,
+          "4": 224,
+          "3": 60,
+          "2": 11,
+          "1": 1
+        },
+        "closed_ron": {
+          "7": 609,
+          "6": 378,
+          "5": 167,
+          "4": 50,
+          "3": 10,
+          "2": 1
+        },
+        "closed_tsumo": {
+          "7": 152,
+          "6": 48,
+          "5": 10,
+          "4": 1
+        },
+        "opened_ron": {
+          "7": 2273,
+          "6": 1690,
+          "5": 1124,
+          "4": 592,
+          "3": 223,
+          "2": 60,
+          "1": 11
+        },
+        "opened_tsumo": {
+          "7": 1689,
+          "6": 1124,
+          "5": 592,
+          "4": 223,
+          "3": 60,
+          "2": 11,
+          "1": 1
+        }
+      },
+      "fan_presence": {
+        "8047": 7,
+        "8074": 4025,
+        "8075": 2530,
+        "8076": 4665,
+        "8077": 2689,
+        "8080": 2368,
+        "8081": 3700,
+        "8048": 10,
+        "8070": 2455,
+        "8072": 2283,
+        "8073": 1983,
+        "8078": 2235,
+        "8079": 2422,
+        "8049": 12,
+        "8071": 3147,
+        "8050": 1,
+        "8051": 9,
+        "8052": 12,
+        "8053": 9,
+        "8054": 45,
+        "8058": 1121,
+        "8061": 1305,
+        "8062": 1305,
+        "8055": 211,
+        "8064": 633,
+        "8065": 1933,
+        "8067": 1788,
+        "8068": 1860,
+        "8069": 652,
+        "8056": 225,
+        "8066": 1330,
+        "8057": 323,
+        "8063": 1215,
+        "8082": 66
+      },
+      "fan_max_count": {
+        "8047": 1,
+        "8074": 3,
+        "8075": 1,
+        "8076": 1,
+        "8077": 1,
+        "8080": 1,
+        "8081": 1,
+        "8048": 1,
+        "8070": 2,
+        "8072": 2,
+        "8073": 2,
+        "8078": 1,
+        "8079": 1,
+        "8049": 1,
+        "8071": 2,
+        "8050": 1,
+        "8051": 1,
+        "8052": 1,
+        "8053": 1,
+        "8054": 1,
+        "8058": 1,
+        "8061": 1,
+        "8062": 1,
+        "8055": 1,
+        "8064": 1,
+        "8065": 2,
+        "8067": 1,
+        "8068": 1,
+        "8069": 1,
+        "8056": 1,
+        "8066": 1,
+        "8057": 1,
+        "8063": 1,
+        "8082": 1
+      },
+      "topics": {},
+      "intersections": {
+        "closed_and_opened": 0,
+        "ron_and_tsumo": 0
+      }
+    },
+    "canonical": {
+      "counts": {
+        "overall": 11053,
+        "opened": 9629,
+        "ron": 7157,
+        "opened_ron": 5944,
+        "tsumo": 3896,
+        "opened_tsumo": 3685,
+        "closed": 1424,
+        "closed_tsumo": 211,
+        "closed_ron": 1213
+      },
+      "observations": 11053,
+      "distribution": {
+        "overall": {
+          "7": 4697,
+          "6": 3226,
+          "5": 1888,
+          "4": 865,
+          "3": 293,
+          "2": 72,
+          "1": 12
+        },
+        "closed": {
+          "7": 759,
+          "6": 426,
+          "5": 177,
+          "4": 51,
+          "3": 10,
+          "2": 1
+        },
+        "opened": {
+          "7": 3938,
+          "6": 2800,
+          "5": 1711,
+          "4": 814,
+          "3": 283,
+          "2": 71,
+          "1": 12
+        },
+        "ron": {
+          "7": 2866,
+          "6": 2058,
+          "5": 1287,
+          "4": 641,
+          "3": 233,
+          "2": 61,
+          "1": 11
+        },
+        "tsumo": {
+          "7": 1831,
+          "6": 1168,
+          "5": 601,
+          "4": 224,
+          "3": 60,
+          "2": 11,
+          "1": 1
+        },
+        "closed_ron": {
+          "7": 607,
+          "6": 378,
+          "5": 167,
+          "4": 50,
+          "3": 10,
+          "2": 1
+        },
+        "closed_tsumo": {
+          "7": 152,
+          "6": 48,
+          "5": 10,
+          "4": 1
+        },
+        "opened_ron": {
+          "7": 2259,
+          "6": 1680,
+          "5": 1120,
+          "4": 591,
+          "3": 223,
+          "2": 60,
+          "1": 11
+        },
+        "opened_tsumo": {
+          "7": 1679,
+          "6": 1120,
+          "5": 591,
+          "4": 223,
+          "3": 60,
+          "2": 11,
+          "1": 1
+        }
+      },
+      "fan_presence": {
+        "8047": 7,
+        "8074": 4025,
+        "8075": 2530,
+        "8076": 4639,
+        "8077": 2689,
+        "8080": 2357,
+        "8081": 3685,
+        "8048": 10,
+        "8070": 2425,
+        "8072": 2277,
+        "8073": 1964,
+        "8078": 2227,
+        "8079": 2412,
+        "8049": 12,
+        "8071": 3112,
+        "8050": 1,
+        "8051": 9,
+        "8052": 12,
+        "8053": 9,
+        "8054": 45,
+        "8058": 1121,
+        "8061": 1305,
+        "8062": 1305,
+        "8055": 211,
+        "8064": 593,
+        "8065": 1932,
+        "8067": 1788,
+        "8068": 1860,
+        "8069": 650,
+        "8056": 225,
+        "8066": 1330,
+        "8057": 323,
+        "8063": 1213,
+        "8082": 66
+      },
+      "fan_max_count": {
+        "8047": 1,
+        "8074": 3,
+        "8075": 1,
+        "8076": 1,
+        "8077": 1,
+        "8080": 1,
+        "8081": 1,
+        "8048": 1,
+        "8070": 2,
+        "8072": 2,
+        "8073": 1,
+        "8078": 1,
+        "8079": 1,
+        "8049": 1,
+        "8071": 2,
+        "8050": 1,
+        "8051": 1,
+        "8052": 1,
+        "8053": 1,
+        "8054": 1,
+        "8058": 1,
+        "8061": 1,
+        "8062": 1,
+        "8055": 1,
+        "8064": 1,
+        "8065": 2,
+        "8067": 1,
+        "8068": 1,
+        "8069": 1,
+        "8056": 1,
+        "8066": 1,
+        "8057": 1,
+        "8063": 1,
+        "8082": 1
+      },
+      "topics": {},
+      "intersections": {
+        "closed_and_opened": 0,
+        "ron_and_tsumo": 0
+      }
+    }
+  },
+  "only_all_optimal_count": 46,
+  "only_all_optimal_distribution": {
+    "7": 26,
+    "6": 14,
+    "5": 5,
+    "4": 1
+  },
+  "only_canonical_count": 0,
+  "audit": {
+    "passed": true,
+    "integrity": "ok",
+    "observations_checked": 22152,
+    "errors": [],
+    "min_fan": 0,
+    "max_fan": 7,
+    "boundary": "positive-witness audit; does not establish exhaustive coverage"
+  },
+  "artifacts": [
+    {
+      "file": "results/basis-under-eight-local-20261025/merged-20261025-150743/census.sqlite3",
+      "bytes": 10108928,
+      "sha256": "6d8f61fa21478128e5f65ec54d8f9cd674a3dfa12e105d019952842fc34d3e3a"
+    },
+    {
+      "file": "results/basis-under-eight-local-20261025/merged-20261025-150743/combinations.jsonl",
+      "bytes": 9484702,
+      "sha256": "eb5465762ce03fed827fd10cc3a4952aa5703e05d2300021f8f74c0961dd391c"
+    },
+    {
+      "file": "results/basis-under-eight-local-20261025/merged-20261025-150743/summary.json",
+      "bytes": 1487,
+      "sha256": "1c2626dcc1684db4b9ec0e688e05036389a909f5f37ba8c78c7244e1a060d2f7"
+    },
+    {
+      "file": "results/basis-under-eight-local-20261025/merged-20261025-150743/witness-audit.json",
+      "bytes": 203,
+      "sha256": "1e015bb7be9bfe993cef381f1bdfbc8bdd47aebf453941d8fb9b662729918926"
+    }
+  ],
+  "report_checks": {
+    "coverage_and_checkpoints": true,
+    "classification_invariants": true,
+    "canonical_observations_subset": true,
+    "gold_silver_regression": true,
+    "four_maxima_rescored": true
+  },
+  "coverage_verification_mode": "original_databases",
+  "boundary": "Frozen no-flower editor profile and finite inventory/event model; no complete four-player action history or official universal rules claim"
+}
