@@ -1,0 +1,22 @@
+{
+  "profile": "editor_no_flower_v1",
+  "scope": "latest-combined",
+  "baseline_8_plus": {
+    "all_optimal": 1103309,
+    "canonical": 1097951,
+    "observations": 2224497,
+    "source_report": "baseline-8-plus.json"
+  },
+  "under_8": {
+    "all_optimal": 11099,
+    "canonical": 11053,
+    "observations": 22152,
+    "source_report": "under-8.json"
+  },
+  "combined": {
+    "all_optimal": 1114408,
+    "canonical": 1109004,
+    "observations": 2246649
+  },
+  "note": "The two scopes are complementary by best total fan; raw databases are intentionally excluded from the public repository."
+}

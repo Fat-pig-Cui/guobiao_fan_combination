@@ -2,7 +2,7 @@
 
 国标麻将番种计数组合的理论枚举、独立 Python 计番与见证复算。
 
-八番及以上的基准全量计算已完成：全部同分最优计法 **1,103,309 种**，规范计法 **1,097,951 种**。另有独立任务只枚举最佳总番为 $0\ldots7$ 的组合，用于补充总番低于8番的集合，得到全部同分最优 **11,099 种**、规范计法 **11,053 种**。与八番及以上结果合并后，两个口径分别为 **1,114,408** 和 **1,109,004** 种；低番结果写入独立报告，不覆盖基准结果。
+当前全范围计算已完成：最佳总番为 $0\ldots7$ 的组合有全部同分最优 **11,099 种**、规范计法 **11,053 种**；最佳总番至少8番的组合有 **1,103,309** 和 **1,097,951** 种。合并后两个口径分别为 **1,114,408** 和 **1,109,004** 种，唯一公开报告入口为 [正式报告](REPORT.md)。
 
 结论适用于冻结的 `editor_no_flower_v1` 配置：四人、136 张、无花牌，其中明暗杠为 5 番，天地人和各为 8 番。统计番种名称及其计分次数，不统计实体手牌种数或出现概率；有限资源及事件模型没有构造完整四家牌谱。详细口径与边界见 [正式报告](REPORT.md)。
 
@@ -12,16 +12,12 @@
 | :---: | :---: |
 | [REPORT.md](REPORT.md) | 全量结论、分类、最高番示例、耗时与验证边界 |
 | [FAN_DISTRIBUTION.md](FAN_DISTRIBUTION.md) | 逐番分布、番种覆盖及两种计法差集 |
-| [ALL_FAN_SCOPE.md](ALL_FAN_SCOPE.md) | 纳入总番低于8番组合的口径、运行方式与验证边界 |
-| [REPORT_UNDER_EIGHT.md](REPORT_UNDER_EIGHT.md) | 最佳总番0–7番的新增组合统计 |
-| [FAN_DISTRIBUTION_UNDER_EIGHT.md](FAN_DISTRIBUTION_UNDER_EIGHT.md) | 0–7番逐番分布和番种覆盖 |
+| [ALL_FAN_SCOPE.md](ALL_FAN_SCOPE.md) | 低于8番范围的筛选口径与边界 |
 | [BASIS_ENUMERATION.md](BASIS_ENUMERATION.md) | 当前算法：基础结构共享分析、原生计番与断点 |
 | [BASIS_VALIDATION.md](BASIS_VALIDATION.md) | 跨语言差分、断点测试与代表性性能验证 |
-| [BASIS_LOCAL_RUN.md](BASIS_LOCAL_RUN.md) | 历史运行记录、统计摘要和公开复现方式 |
 | [REPRODUCIBILITY.md](REPRODUCIBILITY.md) | 从零安装、运行、暂停恢复和重新生成报告 |
 | [WINDOWS_BASIS.md](WINDOWS_BASIS.md) | Windows 构建、多进程运行、暂停与恢复 |
 | [RULE_AUDIT.md](RULE_AUDIT.md) | 冻结规则与参考计番实现的差异 |
-| [ARCHIVE_INDEX.md](ARCHIVE_INDEX.md) | 可删除归档的内容、体积和删除影响 |
 
 ## 当前实现
 
@@ -29,11 +25,11 @@
 
 同时收集全部同分最优与规范计法，以及门清／副露、荣和／自摸分类。没有以“发现的组合已经足够多”作为停止条件，也没有采用未经证明的花色对称剪枝。
 
-旧 Z3、手写生成器、CUDA 筛选器及旧原生工具源码保留作对照；其方案、运行说明及历史产物已归档，不属于当前推荐运行流程。
+当前公开版本只保留 `basis-cpu-v1` 主路径及其测试依赖；不包含 CUDA、旧分片方案或历史运行产物。
 
 ## 安装与验证
 
-Python 3.9 以上及 C++17 编译器。依赖中包含旧求解器及对照测试使用的 Z3。
+Python 3.9 以上及 C++17 编译器。`requirements.txt` 提供计番回归测试所需依赖。
 
 ```sh
 python3 -m venv .venv
@@ -49,7 +45,7 @@ Windows 的编译器安装及 PowerShell 命令见 [Windows 指南](WINDOWS_BASI
 
 ## 统计报告与复现
 
-仓库只提交文档、源码、测试和轻量机器可读统计；完整 SQLite、JSONL、分片日志和运行检查点不随仓库发布，以避免把数十 GiB 的实验产物带入 Git。`REPORT.md`、`FAN_DISTRIBUTION.md` 是八番及以上基准结果，`REPORT_UNDER_EIGHT.md`、`FAN_DISTRIBUTION_UNDER_EIGHT.md` 是最佳总番 0–7 番的补充结果。报告中的路径和 SHA-256 是当时本机运行的 provenance，不表示原始数据库仍包含在仓库中。
+仓库只提交文档、源码、测试和轻量机器可读统计；完整 SQLite、JSONL、分片日志和运行检查点不随仓库发布，以避免把数十 GiB 的实验产物带入 Git。`REPORT.md` 与 `FAN_DISTRIBUTION.md` 是合并 0–7 番和至少 8 番结果后的唯一公开报告入口；`reports/latest/` 保存对应的轻量统计和 provenance。报告中的路径和 SHA-256 仅用于说明生成来源，不表示原始数据库仍包含在仓库中。
 
 安装依赖并运行完整测试：
 
@@ -95,4 +91,4 @@ python3 -m venv .venv
 
 ## 数据清理策略
 
-完整运行数据库、分片、日志和历史归档已从本地工作树移除；这些文件属于可再生实验产物。仓库保留报告数字、统计 JSON、示例和源码，因此任何人都可以从零重建，而无需下载本机的数十 GiB 中间数据。`.gitignore` 会阻止新的运行产物进入版本库。
+完整运行数据库、分片和日志已从本地工作树移除；这些文件属于可再生实验产物。仓库保留报告数字、统计 JSON、示例和源码，因此任何人都可以从零重建，而无需下载本机的数十 GiB 中间数据。`.gitignore` 会阻止新的运行产物进入版本库。

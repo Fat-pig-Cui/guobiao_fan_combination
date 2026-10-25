@@ -4,7 +4,6 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 .mypy_cache/
-build-cuda/
 build-native/
 build-basis/
 tmp/

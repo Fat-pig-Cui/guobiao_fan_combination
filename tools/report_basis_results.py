@@ -241,7 +241,7 @@ def write_report(path,r,maxima,output,min_fan=8,max_total=324,distribution_name=
     names={'standard':'四面子一般形','seven_pairs':'七对形','knitted':'组合龙形','unconnected':'全不靠形','orphans':'十三幺形'}
     lines+=table(['基础结构族','处理数'],[[names[f],n(r['coverage'][f])] for f in names])+['']
     lines+=[f"总计处理 {n(r['processed']['bases'])} 个基础结构、{n(r['processed']['physical'])} 次声明与和牌张状态、{n(r['processed']['contexts'])} 个计番上下文。不同基础结构可重复覆盖相同物理状态，故后两项不是互异牌型数量。",'',
-            ('本次整理使用归档前从 99 个原始数据库提取的覆盖校验摘要，核对任务清单、完成状态、源指纹、范围和已提交游标；未重新读取已归档的分片数据库。' if r['coverage_verification_mode']=='retained_checkpoint_metadata' else '本次整理再次从 99 个任务的原始数据库检查源指纹、范围和已提交游标。')+
+            ('本次整理使用保留的任务元数据核对任务清单、完成状态、源指纹、范围和已提交游标。' if r['coverage_verification_mode']=='retained_checkpoint_metadata' else '本次整理再次从 99 个任务的原始数据库检查源指纹、范围和已提交游标。')+
             '此外核对普通形区间覆盖、规范观测包含关系、分类并集／交集恒等式、逐番分布求和和八番专题回归。此前测试有 61 项通过；全量保留的 2,224,497 条分类观测已由结构拆分和计番分别实现的 Python 检查器逐条复算，数据库完整性检查为 `ok`。','',
             '完整性的依据是有限生成循环、合法声明／事件覆盖和分片穷尽；正例复核只证明已保存见证通过检查，本身不能证明无遗漏。当前结论仍受冻结计番规则及其资源／有限时序模型约束，没有构造四家从配牌到和牌的完整牌谱，也不以本次离线复核声称经过服务器验证。','',
             '## 七、实际运行耗时','']
@@ -255,14 +255,14 @@ def write_report(path,r,maxima,output,min_fan=8,max_total=324,distribution_name=
         '## 八、结果与复现','',
         f"正式任务目录为 `{r['run']}/`，最终结果为 `{r['final_directory']}/`。`summary.json` 保存总数，`combinations.jsonl` 保存组合分类及见证，`census.sqlite3` 保存合并后的查询表，`witness-audit.json` 保存完整独立复核结论。",'',
         f"本报告的机器可读统计保存在 `{output.resolve().relative_to(ROOT)}/statistics.json`，最高番示例为 `maxima.json`，两种计法的全局差集为 `only_all_optimal.jsonl`，结果文件大小和 SHA-256 见 `artifacts.json`。",'',
-        '归档整理后，分片数据库、历史采样和旧方案集中在可删除的 `archive/` 中；最终结果、任务清单、完成状态及 `coverage-audit.json` 留在正式目录。归档删除后，报告工具使用与任务清单、完成状态及源码指纹绑定的历史覆盖校验摘要，仍从最终数据库重新统计和复算最高番示例。该摘要不能用于恢复或重新合并原分片，也不代表重新检查了已删除的数据库。', '',
+        '报告生成器只读取当前运行目录中的数据库和完成状态；这些原始运行产物不属于公开仓库，报告发布时只保留轻量统计摘要。', '',
         '重新生成同口径报告：','', '```sh',
         '.venv/bin/python tools/report_basis_results.py \\',
-        '  --run results/basis-full-local-20261021 \\',
-        '  --output reports/basis-full-reproduced \\',
+        '  --run results/basis-reproduction \\',
+        '  --output reports/reproduced \\',
         '  --report REPORT_REPRODUCED.md \\',
         '  --distribution FAN_DISTRIBUTION_REPRODUCED.md','```','',
-        '生成工具只读正式数据库，并校验完成状态、源指纹、分片范围和计数恒等式；重新复算四个最高番示例，不重复进行耗时的全量枚举。旧约束／旧物理路径的报告入口使用不同结果格式，应通过本工具整理新的基础结构结果。','']
+        '生成工具只读正式数据库，并校验完成状态、源指纹、分片范围和计数恒等式；重新复算四个最高番示例，不重复进行耗时的全量枚举。报告工具只处理当前 basis-cpu-v1 结果格式。','']
     md(path,lines)
 
 

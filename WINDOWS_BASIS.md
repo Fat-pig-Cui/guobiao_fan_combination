@@ -2,11 +2,11 @@
 
 ## 一、适用范围与迁移
 
-本指南用于 `basis-cpu-v1`：C++ 生成基础结构并计番，Python 保存组合见证和 checkpoint，完成后独立复算。旧物理遍历目录 `results/native-local-20261021/` 已暂停，继续保留；它的游标与新算法不兼容，不能传给新运行器。
+本指南用于当前 `basis-cpu-v1`：C++ 生成基础结构并计番，Python 保存组合见证和 checkpoint，完成后独立复算。
 
-复制项目根目录的源码、`native/`、`tools/`、`tests/` 和所需文档。首次运行新算法不依赖旧结果；以后迁移新算法的任务时，须先安全暂停，再复制整个新结果目录。不要在两台设备或同步盘上同时写同一个目录。
+复制项目根目录的源码、`native/`、`tools/`、`tests/` 和所需文档。正式运行从空的结果目录开始；若要迁移正在运行的任务，须先安全暂停，再复制整个结果目录。不要在两台设备或同步盘上同时写同一个目录。
 
-不要复制 `.venv/`、`build-basis/`、`build-native/`、`build-cuda/`；在 Windows 重新创建环境和二进制。使用压缩包或保留文件原始字节的复制方式，避免 Git 或编辑器转换换行导致指纹不匹配。
+不要复制 `.venv/` 或任何 `build-*/` 目录；在 Windows 重新创建环境和二进制。使用压缩包或保留文件原始字节的复制方式，避免 Git 或编辑器转换换行导致指纹不匹配。
 
 ## 二、安装与校验
 
@@ -26,7 +26,7 @@ if ($LASTEXITCODE -ne 0) { throw '原生计番器构建失败' }
 if ($LASTEXITCODE -ne 0) { throw '测试失败，暂不启动正式枚举' }
 ```
 
-新路径本身只依赖 Python 标准库和 C++17；安装 `requirements.txt` 是为了运行原有 Z3 对照测试。构建器优先尝试 `clang++`／`g++`，否则使用 CMake 的 Release 构建。macOS 本次验证不代表 Windows 已实机通过。
+新路径本身只依赖 Python 标准库和 C++17；安装 `requirements.txt` 以运行完整回归测试。构建器优先尝试 `clang++`／`g++`，否则使用 CMake 的 Release 构建。macOS 本次验证不代表 Windows 已实机通过。
 
 ## 三、先做小域端到端验证
 
@@ -45,7 +45,7 @@ if ($LASTEXITCODE -ne 0) { throw '测试失败，暂不启动正式枚举' }
 
 ## 四、正式 8 进程运行
 
-以下示例使用全新目录，不覆盖旧算法：
+以下示例使用全新目录：
 
 ```powershell
 # 只准备任务布局，不执行全量遍历
@@ -103,6 +103,6 @@ Get-Content .\results\basis-full\controller.log -Tail 30
 
 可用空间低于 8 GiB 时控制器请求安全暂停。新算法取消了此前约 190 GiB 的物理索引需求，但组合见证和各分片数据库仍占空间，不能宣称恒定磁盘占用。跨平台完整耗时以 Windows 实机验证为准。
 
-macOS 对应命令只需将 `& .\.venv\Scripts\python.exe` 替换为 `.venv/bin/python`，其他参数相同。旧物理路径的 Windows 说明已归档，见 [归档索引](ARCHIVE_INDEX.md)。
+macOS 对应命令只需将 `& .\.venv\Scripts\python.exe` 替换为 `.venv/bin/python`，其他参数相同。仓库不附带历史运行数据；如需复现，请使用全新输出目录。
 
-本机已完成任务的分片中间文件也已归档，保留的正式目录用于查阅和复核，不应用上述 `start` 命令尝试续跑。若要在 Windows 重新全量计算，使用新的输出目录。尚在运行或暂停的其他任务仍须完整迁移分片数据库，覆盖摘要不能代替其断点。
+公开仓库不附带已完成任务的分片；在 Windows 上应从源码创建新的输出目录并运行。
