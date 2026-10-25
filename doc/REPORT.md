@@ -18,11 +18,11 @@
 
 C++ 负责基础结构、声明和事件枚举，Python 负责事务 checkpoint、组合合并、独立计番复核和报告生成。当前测试套件包含65项回归、跨语言差分、覆盖和断点测试；GitHub Actions 在 Ubuntu 上执行依赖安装、原生构建和全量测试。
 
-从零运行请阅读 [REPRODUCIBILITY.md](REPRODUCIBILITY.md)。算法边界和规则口径见 [BASIS_ENUMERATION.md](BASIS_ENUMERATION.md) 与 [RULE_AUDIT.md](RULE_AUDIT.md)，Windows 流程见 [WINDOWS_BASIS.md](WINDOWS_BASIS.md)。
+从零运行请阅读 [REPRODUCIBILITY.md](REPRODUCIBILITY.md)。算法边界和规则口径见 [ALGORITHM.md](ALGORITHM.md) 与 [RULE_AUDIT.md](RULE_AUDIT.md)，Windows 流程也见 [REPRODUCIBILITY.md](REPRODUCIBILITY.md)。
 
 ## 三、逐番结果
 
-完整逐番分布、门清／副露、荣和／自摸分类、番种覆盖和两种计法差集见 [FAN_DISTRIBUTION.md](FAN_DISTRIBUTION.md)。轻量机器可读统计见 [`reports/latest/`](reports/latest/)。
+完整逐番分布、门清／副露、荣和／自摸分类、番种覆盖和两种计法差集见 [FAN_DISTRIBUTION.md](FAN_DISTRIBUTION.md)。轻量机器可读统计见 [`reports/latest/`](../reports/latest/)。
 
 ## 四、证据边界
 

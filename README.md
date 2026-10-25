@@ -2,22 +2,20 @@
 
 国标麻将番种计数组合的理论枚举、独立 Python 计番与见证复算。
 
-当前全范围计算已完成：最佳总番为 $0\ldots7$ 的组合有全部同分最优 **11,099 种**、规范计法 **11,053 种**；最佳总番至少8番的组合有 **1,103,309** 和 **1,097,951** 种。合并后两个口径分别为 **1,114,408** 和 **1,109,004** 种，唯一公开报告入口为 [正式报告](REPORT.md)。
+当前全范围计算已完成：最佳总番为 $0\ldots7$ 的组合有全部同分最优 **11,099 种**、规范计法 **11,053 种**；最佳总番至少8番的组合有 **1,103,309** 和 **1,097,951** 种。合并后两个口径分别为 **1,114,408** 和 **1,109,004** 种，唯一公开报告入口为 [正式报告](doc/REPORT.md)。
 
-结论适用于冻结的 `editor_no_flower_v1` 配置：四人、136 张、无花牌，其中明暗杠为 5 番，天地人和各为 8 番。统计番种名称及其计分次数，不统计实体手牌种数或出现概率；有限资源及事件模型没有构造完整四家牌谱。详细口径与边界见 [正式报告](REPORT.md)。
+结论适用于冻结的 `editor_no_flower_v1` 配置：四人、136 张、无花牌，其中明暗杠为 5 番，天地人和各为 8 番。统计番种名称及其计分次数，不统计实体手牌种数或出现概率；有限资源及事件模型没有构造完整四家牌谱。详细口径与边界见 [正式报告](doc/REPORT.md)。
 
 ## 文档导航
 
 | 文档 | 内容 |
 | :---: | :---: |
-| [REPORT.md](REPORT.md) | 全量结论、分类、最高番示例、耗时与验证边界 |
-| [FAN_DISTRIBUTION.md](FAN_DISTRIBUTION.md) | 逐番分布、番种覆盖及两种计法差集 |
-| [ALL_FAN_SCOPE.md](ALL_FAN_SCOPE.md) | 低于8番范围的筛选口径与边界 |
-| [BASIS_ENUMERATION.md](BASIS_ENUMERATION.md) | 当前算法：基础结构共享分析、原生计番与断点 |
-| [BASIS_VALIDATION.md](BASIS_VALIDATION.md) | 跨语言差分、断点测试与代表性性能验证 |
-| [REPRODUCIBILITY.md](REPRODUCIBILITY.md) | 从零安装、运行、暂停恢复和重新生成报告 |
-| [WINDOWS_BASIS.md](WINDOWS_BASIS.md) | Windows 构建、多进程运行、暂停与恢复 |
-| [RULE_AUDIT.md](RULE_AUDIT.md) | 冻结规则与参考计番实现的差异 |
+| [doc/REPORT.md](doc/REPORT.md) | 全量结论、分类与验证边界 |
+| [doc/FAN_DISTRIBUTION.md](doc/FAN_DISTRIBUTION.md) | 逐番分布与计法差集 |
+| [doc/ALGORITHM.md](doc/ALGORITHM.md) | 枚举算法、覆盖和验证 |
+| [doc/REPRODUCIBILITY.md](doc/REPRODUCIBILITY.md) | 跨平台复现、断点与恢复 |
+| [doc/PAPER.md](doc/PAPER.md) | 方法论文 |
+| [doc/RULE_AUDIT.md](doc/RULE_AUDIT.md) | 规则与参考实现审查 |
 
 ## 当前实现
 
@@ -41,7 +39,7 @@ python3 -m venv .venv
 .venv/bin/python calc_fan.py examples/silver_arrow.json
 ```
 
-Windows 的编译器安装及 PowerShell 命令见 [Windows 指南](WINDOWS_BASIS.md)。
+Windows 的编译器安装及 PowerShell 命令见 [Windows 指南](doc/REPRODUCIBILITY.md)。
 
 ## 统计报告与复现
 
@@ -75,7 +73,7 @@ python3 -m venv .venv
   --distribution FAN_DISTRIBUTION_REPRODUCED.md
 ```
 
-枚举支持事务 checkpoint、暂停和恢复；Windows 的 PowerShell 流程见 [Windows 指南](WINDOWS_BASIS.md)，算法边界见 [基础结构枚举说明](BASIS_ENUMERATION.md)。完整实验通常需要较长时间和较大的临时磁盘空间，不应在 Git 工作树中提交 `results/`、`build-*` 或虚拟环境。
+枚举支持事务 checkpoint、暂停和恢复；Windows 的 PowerShell 流程见 [Windows 指南](doc/REPRODUCIBILITY.md)，算法边界见 [基础结构枚举说明](doc/ALGORITHM.md)。完整实验通常需要较长时间和较大的临时磁盘空间，不应在 Git 工作树中提交 `results/`、`build-*` 或虚拟环境。
 
 ## 启动新的枚举
 
